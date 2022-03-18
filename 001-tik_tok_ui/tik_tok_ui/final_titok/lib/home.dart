@@ -24,20 +24,9 @@ class Home extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.end,
-          children: <Widget>[
-            Expanded(
-              child: Container(
-                color: Colors.green[300],
-              ),
-            ),
-            Container(
-              width: 100.0,
-              color: Colors.red[300],
-            ),
-          ],
+          children: <Widget>[videoDescription, actionsToolbar],
         ),
       );
-
   Widget get bottomSection => Container(height: 80.0, color: Colors.blue[300]);
 
   @override
