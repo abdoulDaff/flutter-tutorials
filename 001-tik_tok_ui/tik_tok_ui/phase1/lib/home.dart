@@ -12,13 +12,25 @@ class Home extends StatelessWidget {
       children: <Widget>[
         // Top Section
         Container(
-          height: 300,
+          height: 80.0,
           color: Colors.yellow[300],
         ),
         // Middle Section
         Expanded(
-          child: Container(
-            color: Colors.green[300],
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Expanded(
+                child: Container(
+                  color: Colors.green[300],
+                ),
+              ),
+              Container(
+                width: 100.0,
+                color: Colors.red[300],
+              ),
+            ],
           ),
         ),
         // Bottom Section
