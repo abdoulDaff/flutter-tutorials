@@ -9,17 +9,34 @@ class Home extends StatelessWidget {
         color: Colors.yellow[300],
       );
 
+  Widget get videoDescription => Expanded(
+        child: Container(
+          color: Colors.green[300],
+        ),
+      );
+
+  Widget get actionsToolbar => Container(
+        width: 100.0,
+        color: Colors.red[300],
+      );
+
   Widget get middleSection => Expanded(
-          child: Row(
-              mainAxisSize: MainAxisSize.max,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: <Widget>[
-            Expanded(child: Container(color: Colors.green[300])),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+            Expanded(
+              child: Container(
+                color: Colors.green[300],
+              ),
+            ),
             Container(
               width: 100.0,
               color: Colors.red[300],
-            )
-          ]));
+            ),
+          ],
+        ),
+      );
 
   Widget get bottomSection => Container(height: 80.0, color: Colors.blue[300]);
 
