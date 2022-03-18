@@ -40,27 +40,13 @@ class Home extends StatelessWidget {
       body: Column(
         children: <Widget>[
           // Top section
-          Container(
-            height: 100.0,
-            padding: const EdgeInsets.only(bottom: 15.0),
-            color: Colors.yellow[300],
-          ),
+          topSection,
 
           // Middle expanded
-          Expanded(
-              child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: <Widget>[
-                Expanded(child: Container(color: Colors.green[300])),
-                Container(
-                  width: 100.0,
-                  color: Colors.red[300],
-                )
-              ])),
+          middleSection,
 
           // Bottom Section
-          Container(height: 80.0, color: Colors.blue[300]),
+          bottomSection,
         ],
       ),
     );
