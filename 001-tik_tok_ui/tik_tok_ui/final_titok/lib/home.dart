@@ -10,9 +10,23 @@ class Home extends StatelessWidget {
       );
 
   Widget get videoDescription => Expanded(
-        child: Container(
-          color: Colors.green[300],
-        ),
+        child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                  height: 10.0,
+                  color: Colors.green[300],
+                  margin: const EdgeInsets.only(top: 10)),
+              Container(
+                  height: 10.0,
+                  color: Colors.green[300],
+                  margin: const EdgeInsets.only(top: 10)),
+              Container(
+                  height: 10.0,
+                  color: Colors.green[300],
+                  margin: const EdgeInsets.only(top: 10))
+            ]),
       );
 
   Widget get actionsToolbar => Container(
