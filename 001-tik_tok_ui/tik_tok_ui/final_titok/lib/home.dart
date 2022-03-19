@@ -52,7 +52,17 @@ class Home extends StatelessWidget {
           children: <Widget>[videoDescription, actionsToolbar],
         ),
       );
-  Widget get bottomSection => Container(height: 80.0, color: Colors.blue[300]);
+  Widget get bottomSection => Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: List<Widget>.generate(
+          5,
+          (index) => Container(
+            width: 40.0,
+            height: 40.0,
+            color: Colors.purple[300],
+          ),
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
