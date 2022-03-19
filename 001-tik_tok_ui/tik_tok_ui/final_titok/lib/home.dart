@@ -13,10 +13,15 @@ class Home extends StatelessWidget {
       );
 
   Widget get middleSection => Expanded(
-      child: Row(
+        child: Row(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.end,
-          children: <Widget>[VideoDescription(), ActionsToolbar()]));
+          children: const <Widget>[
+            VideoDescription(),
+            ActionsToolbar(),
+          ],
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +35,7 @@ class Home extends StatelessWidget {
           middleSection,
 
           // Bottom Section
-          BottomToolbar(),
+          const BottomToolbar(),
         ],
       ),
     );
